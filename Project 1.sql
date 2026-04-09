@@ -176,4 +176,13 @@ FROM
 GROUP BY category
 
 -- Q10. Write a query to create each shift and no. of orders (E.g. Morning<=12, Afternoon between 12 & 17, Evening > 17)
-   
+
+ SELECT 
+       CASE 
+         WHEN  HOUR(sale_time) <=12  THEN 'Morning'
+         WHEN HOUR(sale_time) > 12 AND HOUR(sale_time) <= 17 THEN 'Afternoon'
+	     ELSE 'Evening'
+	  END AS Shift,
+	  count(*) AS 'no. of orders'
+   FROM retail_sales_tb
+   GROUP BY shift;
