@@ -57,6 +57,7 @@ Detects seasonal trends
 Helps optimize staffing and marketing timing
 
 Key Insights:
+
 Certain categories contribute significantly more to total revenue
 A small group of customers drives a large portion of sales (high-value customers)
 Sales patterns vary across time shifts, indicating peak shopping hours
